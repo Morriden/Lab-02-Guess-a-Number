@@ -29,6 +29,9 @@ const defuseBomb = () => {
         if (remainCount === 0) {
             document.getElementById('button').disabled = true;
         }
+        if (remainCount === 0) {
+            winOrLose.textContent = 'The Bomb blew up, try again!';
+        }
         //highOrLowSpan.textContent = 'Your guess is to low'
     } else if (guessResult === 0) {
         winOrLose.textContent = 'You defused the bomb!!!';
@@ -39,6 +42,9 @@ const defuseBomb = () => {
         highOrLowSpan.textContent = 'Your guess was to high!';
         if (remainCount === 0) {
             document.getElementById('button').disabled = true;
+        }
+        if (remainCount === 0) {
+            winOrLose.textContent = 'The bomb blew up, try again!';
         }
     }
 };
