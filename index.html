@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Defuse the Bomb</title>
+</head>
+<h1>Bomb Squad Training</h1>
+<body class="container1">
+    <div>
+        <p>Your objective today is to defuse the bomb in 4 tries or less.</p>
+        <p>You must enter a number between 1 and 20, if the number matches the bomb defuse number you will defuse the bomb!</p>
+        <p>With your training you will be able to tell if the last number guessed was too high or too low.</p>
+        <p>Best of luck agent!</p>
+    </div>
+    <input type="number" id="user-guess" min="1" max="20">
+    <button id="button" type="submit">Attempt to Defuse</button>
+    <div>Attempts left before explosion: <span id="attempts-left"></span></div>
+    <div>High or Low:  <span id="high-or-low"></span></div>
+    <div><span id="win-or-lose"></span></div>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
